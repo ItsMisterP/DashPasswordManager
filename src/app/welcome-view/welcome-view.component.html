@@ -1,0 +1,26 @@
+<div class="welcome-container">
+    <div class="logo-container">
+        <img class="logo" src="/assets/Logo.png">
+    </div>
+    <div class="welcome-text">
+        Enter your mnemonic to use dash passwordmanager
+    </div>
+    
+    <div class="mnemonicForm">
+        <form [formGroup]="mnemonicInput" (ngSubmit)="submit()">
+            <div class="mnemonic-input">
+                <mat-form-field appearance="fill">
+                    <mat-label>Mnemonic</mat-label>
+                    <input matInput type="text" formControlName="mnemonic">
+                  </mat-form-field>
+            </div>
+            <div class="submit-button">
+                <button mat-raised-button type="submit">Check</button>
+            </div>
+        </form>
+    </div>
+    
+    <div class="create-mnemonic">
+        Create a new mnemonic: Click here
+    </div>
+</div>
